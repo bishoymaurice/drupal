@@ -1,2 +1,3 @@
 steps:
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
+  args: ['composer install']
