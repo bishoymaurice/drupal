@@ -2,7 +2,7 @@ steps:
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
   args: ['more', 'cloudbuild.yaml']
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
-  args: ['zip -r drupal-artifact.zip *']
+  args: ['docker ps']
 artifacts:
   objects:
     location: 'gs://drupal-artifact'
