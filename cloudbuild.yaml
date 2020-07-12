@@ -5,10 +5,9 @@ steps:
 
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
   entrypoint: 'bash'
-  args: ['-c', 'ls -ltr']
+  args: ['-c', 'ls']
 
 artifacts:
   objects:
     location: 'gs://drupal-artifact'
     paths: ['*']
-    
