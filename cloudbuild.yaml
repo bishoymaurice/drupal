@@ -4,4 +4,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://drupal-artifact'
-    paths: ['.']
+    paths: ['composer.json']
