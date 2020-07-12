@@ -1,12 +1,12 @@
 steps:
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
-  entrypoint: 'bash'
   args:
   - '-set eEo pipefail'
   - '-c'
   - |-
-  composer install
+    composer install
 artifacts:
   objects:
     location: 'gs://drupal-artifact'
     paths: ['/app/app.zip']
+    
