@@ -3,7 +3,7 @@ steps:
   args: ['composer', 'install']
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
   entrypoint: 'bash'
-  args: ['-c', 'zip -r /app/app.zip /app']
+  args: ['ls -ltr']
 artifacts:
   objects:
     location: 'gs://drupal-artifact'
