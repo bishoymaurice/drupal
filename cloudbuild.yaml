@@ -3,7 +3,7 @@ steps:
   args:
   - '-set eEo pipefail'
   - '-c'
-  - |-
+  - |
     composer install \
     && zip -r drupal-artifact.zip *
 artifacts:
