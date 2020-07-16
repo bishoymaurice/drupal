@@ -1,7 +1,7 @@
 steps:
 
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
-  args: ['composer', 'install']
+  args: ['composer', 'install', '---v']
 
 - name: 'eu.gcr.io/test-project-278516/php7.1.33_drupal'
   entrypoint: 'bash'
