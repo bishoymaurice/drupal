@@ -8,4 +8,4 @@ steps:
   - |-
     gsutil cp gs://drupal-artifact/app.zip .
     ls
-    gcloud compute copy-files 10.154.0.2:./app.zip ./app.zip --zone=europe-west2-c --project "practiceproject-283720"
+    scp ./app.zip bishoymaurice/pass123@35.189.87.3:./app.zip
