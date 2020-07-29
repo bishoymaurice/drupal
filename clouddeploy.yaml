@@ -8,4 +8,4 @@ steps:
   - |-
     gsutil cp gs://drupal-artifact/app.zip .
     ls
-    scp ./app.zip bishoymaurice/pass123@35.189.87.3:/home/bishoymaurice
+    scp ./app.zip bishoymaurice/pass123@35.189.87.3:/home/bishoymaurice/
