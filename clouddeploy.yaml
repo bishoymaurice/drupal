@@ -7,5 +7,9 @@ steps:
   - '-c'
   - |-
     gsutil cp gs://drupal-artifact/app.zip .
+    gsutil cp gs://dev-ssh-key/gcp.ppk .
     ls
-    scp ./app.zip root/root@35.189.87.3:/
+    scp -i ./gcp.ppk ./app.zip bishoymaurice@35.189.87.3:/home/bishoymaurice/app.zip
+    # Mimic capistrano functions
+    # Execute drush commands
+    # Run test cases
