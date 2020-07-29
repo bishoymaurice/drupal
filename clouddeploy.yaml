@@ -1,5 +1,4 @@
 steps:
-
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   args:
@@ -7,5 +6,8 @@ steps:
   - 'pipefail'
   - '-c'
   - |-
-    gsutil cp gs://my-bucket/app.zip .
-    ls
+    if (( $(date '+%-e') % 2 )); then
+      echo "today is an odd day"
+    else
+      echo "today is an odd day, with an even number"
+    fi
