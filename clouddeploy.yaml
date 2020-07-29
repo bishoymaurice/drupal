@@ -6,5 +6,5 @@ steps:
   - 'pipefail'
   - '-c'
   - |-
-    gsutil cp gs://my-bucket/app.zip .
+    gsutil cp gs://drupal-artifact/app.zip .
     ls
